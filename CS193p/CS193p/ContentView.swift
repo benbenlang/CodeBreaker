@@ -13,7 +13,7 @@ struct ContentView: View {
     }
     
     func greetings() -> Text {
-        return Text("greetings!")
+        return Text("greetings!!")
     }
     
 }
