@@ -9,15 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 1,content: greetings)
+        VStack {
+            Image(systemName: "globe")
+            if true {
+                Text("greetings!")
+            }
+            Text("byebye!")
+            Circle()
+        }
     }
-    
-    @ViewBuilder
-    func greetings() -> TupleView<(Image,Text,Circle)> {
-        Image(systemName: "globe")
-        Text("greetings!!")
-        Circle()
-    }
+
     
 }
 
