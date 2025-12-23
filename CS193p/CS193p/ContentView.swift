@@ -12,8 +12,11 @@ struct ContentView: View {
         VStack(alignment: .leading, spacing: 1,content: greetings)
     }
     
-    func greetings() -> Text {
-        return Text("greetings!!")
+    @ViewBuilder
+    func greetings() -> TupleView<(Image,Text,Circle)> {
+        Image(systemName: "globe")
+        Text("greetings!!")
+        Circle()
     }
     
 }
