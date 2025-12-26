@@ -11,9 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
-            if true {
-                Text("greetings-05")
-            }
+            Text("greetings-06")
             Text("byebye!!!")
             Circle()
         }
