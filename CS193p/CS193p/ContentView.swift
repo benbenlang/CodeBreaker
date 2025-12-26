@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             Image(systemName: "globe")
             if true {
-                Text("greetings!!!")
+                Text("greetings-05")
             }
             Text("byebye!!!")
             Circle()
