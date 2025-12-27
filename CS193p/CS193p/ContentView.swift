@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            pegs(colors: [.red, .green, .green, .yellow])
+            pegs(colors: [Color.red, .green, .green, .yellow])
             pegs(colors: [.red, .blue, .green, .red])
-            pegs(colors: [.red, .yellow, .green, .blue])
+            pegs(colors: [.red, .yellow, .green])
         }
         .padding()
     }
