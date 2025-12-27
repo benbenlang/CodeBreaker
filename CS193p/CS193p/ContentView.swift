@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack{
             pegs(colors: [Color.red, .green, .green, .yellow])
             pegs(colors: [.red, .blue, .green, .red])
-            pegs(colors: [.red, .yellow, .green])
+            pegs(colors: [.red, .yellow, .green, .blue])
         }
         .padding()
     }
@@ -21,6 +21,16 @@ struct ContentView: View {
         HStack{
             ForEach(colors.indices, id: \.self) { index in
                 Circle().foregroundStyle(colors[index])
+            }
+            HStack{
+                VStack{
+                    Circle()
+                    Circle()
+                }
+                VStack{
+                    Circle()
+                    Circle()
+                }
             }
         }
     }
